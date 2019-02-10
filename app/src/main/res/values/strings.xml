@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tedx Akgec</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next_event">Next Event</string>
+    <string name="ajay_kumar_garg_engineering_college">Ajay Kumar Garg Engineering College</string>
+    <string name="_24th_km_stone_nh_24">24th KM Stone, NH 24</string>
+    <string name="ghaziabad">Ghaziabad</string>
+    <string name="reserve_seats">Reserve Seats</string>
+    <string name="home">Home</string>
+    <string name="speakers">Speakers</string>
+    <string name="days_left">Days Left</string>
+    <string name="create_event">Create Event</string>
+    <string name="close">Close</string>
+</resources>

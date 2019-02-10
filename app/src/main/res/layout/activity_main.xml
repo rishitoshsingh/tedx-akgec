@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="in.co.bdcoe.tedxakgec.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextAppearance="@font/roboto_thin"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="bottom"
+            app:expandedTitleMargin="16dp"
+            app:expandedTitleTextAppearance="@font/roboto_regular"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="parallax">
+
+                <com.github.florent37.shapeofview.shapes.DiagonalView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:elevation="10dp"
+                    android:fitsSystemWindows="true"
+                    app:shape_diagonal_angle="20"
+                    app:shape_diagonal_direction="right"
+                    app:shape_diagonal_position="bottom">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorAccent"
+                        android:fitsSystemWindows="true" />
+
+                    <com.flaviofaria.kenburnsview.KenBurnsView
+                        android:id="@+id/backdrop_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:paddingBottom="32dp"
+                        android:paddingTop="32dp"
+                        android:src="@drawable/akgec_backdrop_one"
+                        app:layout_collapseMode="parallax" />
+
+                </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="start"
+                    android:padding="8dp"
+                    android:src="@drawable/two_line_white_bg" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextColor="@color/primary_text">
+
+                <ImageView
+                    android:id="@+id/toolbar_image"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/two_line_white_bg" />
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+        <in.co.bdcoe.tedxakgec.NoSwipePager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:background="#EFEFEF" />
+
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_dodgeInsetEdges="start" />
+</android.support.design.widget.CoordinatorLayout>

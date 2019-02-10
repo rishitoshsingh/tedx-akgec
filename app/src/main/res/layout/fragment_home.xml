@@ -1,0 +1,200 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="in.co.bdcoe.tedxakgec.HomeFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/days_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="32sp"
+                            tools:text="21" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/days_left"
+                            android:textColor="@color/primary_text"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/create_event_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackgroundBorderless">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@color/secondary_text" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/calender_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_date_range_black_48dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/calender_icon"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/create_event"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="246dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="center"
+                        android:src="@drawable/hall" />
+
+                    <TextView
+                        android:id="@+id/next_event_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="@string/next_event"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/next_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/next_event_head"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="16dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="26 January, 2019"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="22sp"
+                        tools:text="26 January, 2019" />
+
+                    <TextView
+                        android:id="@+id/address_line_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/next_event"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/roboto_light_italic"
+                        android:text="@string/ajay_kumar_garg_engineering_college"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/address_line_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_line_1"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/roboto_light_italic"
+                        android:text="@string/_24th_km_stone_nh_24"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/address_line_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address_line_2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="16dp"
+                        android:fontFamily="@font/roboto_light_italic"
+                        android:text="@string/ghaziabad"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorAccent"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:gravity="center"
+                        android:text="@string/reserve_seats"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
