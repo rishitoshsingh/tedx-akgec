@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="210dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/tedx_wallpaper" />
+            android:src="@drawable/tedxakgec_wallpaper" />
 
 
     </com.github.florent37.shapeofview.shapes.DiagonalView>

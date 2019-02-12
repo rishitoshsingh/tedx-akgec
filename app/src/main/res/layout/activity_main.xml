@@ -67,7 +67,7 @@
                     android:layout_alignParentBottom="true"
                     android:layout_gravity="start"
                     android:padding="8dp"
-                    android:src="@drawable/two_line_white_bg" />
+                    android:src="@drawable/tedxakgec_single_line" />
 
             </RelativeLayout>
 
@@ -86,7 +86,7 @@
                     android:layout_gravity="start"
                     android:paddingBottom="8dp"
                     android:paddingTop="8dp"
-                    android:src="@drawable/two_line_white_bg" />
+                    android:src="@drawable/tedxakgec_single_line" />
 
             </android.support.v7.widget.Toolbar>
 

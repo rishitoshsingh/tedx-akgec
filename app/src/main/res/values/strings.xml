@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TedxAkgec</string>
+    <string name="app_name">TedxAKGEC</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -16,4 +16,10 @@
     <string name="get_directions">Get Directions</string>
     <string name="about_us">About Us</string>
     <string name="follow_us">Follow Us</string>
+    <string name="follow">follow</string>
+    <string name="tedxakgec">TEDxAKGEC</string>
+    <string name="bdcoe">Big Data Center of Excellence</string>
+    <string name="powered_by">Powered By</string>
+    <string name="developed_by">Developed By</string>
+    <string name="rishitoshsingh">rishitoshsingh</string>
 </resources>

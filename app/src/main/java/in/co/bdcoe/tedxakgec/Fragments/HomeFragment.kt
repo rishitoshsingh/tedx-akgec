@@ -1,10 +1,9 @@
 package `in`.co.bdcoe.tedxakgec.Fragments
 
 
-import `in`.co.bdcoe.tedxakgec.Network.ServiceGenerator
-import `in`.co.bdcoe.tedxakgec.Network.TedxAkgecClient
 import `in`.co.bdcoe.tedxakgec.R
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.provider.CalendarContract
 import android.provider.CalendarContract.Events
@@ -56,6 +55,11 @@ class HomeFragment : Fragment() {
             createListner()
         } catch (ex: Exception) {
             Log.d("updateDateAndUI()", "Error", ex)
+        }
+        get_directions.setOnClickListener {
+            val intent = Intent(android.content.Intent.ACTION_VIEW,
+                    Uri.parse("geo:0,0?q=28.6758,77.5022 (Ajay Kumar Garg Engineering College)"))
+            startActivity(intent)
         }
     }
 

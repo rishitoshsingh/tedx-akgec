@@ -48,7 +48,7 @@
             </com.github.florent37.shapeofview.shapes.DiagonalView>
 
             <TextView
-                android:id="@+id/about_tedx_akgec"
+                android:id="@+id/about_ted"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/downward_diagonal_1"
@@ -58,6 +58,14 @@
                 android:padding="16dp"
                 android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                 android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_marginEnd="4dp"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@id/about_ted"
+                android:layout_width="80dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ted_white"/>
 
         </RelativeLayout>
 
@@ -99,7 +107,7 @@
             </com.github.florent37.shapeofview.shapes.DiagonalView>
 
             <TextView
-                android:id="@+id/about_ted"
+                android:id="@+id/about_tedx"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/downward_diagonal_2"
@@ -109,6 +117,13 @@
                 android:padding="16dp"
                 android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                 android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="4dp"
+                android:layout_above="@id/about_tedx"
+                android:src="@drawable/tedx_white"/>
 
         </RelativeLayout>
 
@@ -150,7 +165,7 @@
             </com.github.florent37.shapeofview.shapes.DiagonalView>
 
             <TextView
-                android:id="@+id/about_tedx"
+                android:id="@+id/about_tedx_akgec"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/downward_diagonal_3"
@@ -161,45 +176,235 @@
                 android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                 android:textColor="@color/colorPrimaryDark" />
 
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:layout_above="@id/about_tedx_akgec"
+                android:src="@drawable/tedx_akgec_white"/>
+
         </RelativeLayout>
 
-        <TextView
+        <LinearLayout
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_light_italic"
-            android:text="@string/follow_us" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light_italic"
+                android:text="@string/follow" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/tedxakgec" />
+
+        </LinearLayout>
 
         <LinearLayout
+            android:layout_margin="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/linkedin_tedxakgec"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:src="@drawable/ic_near_me_black_48dp"
-                android:tint="@color/secondary_text" />
+                android:src="@drawable/linkedin" />
 
             <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/instagram_tedxakgec"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:src="@drawable/ic_near_me_black_48dp"
-                android:tint="@color/secondary_text" />
+                android:src="@drawable/instagram" />
 
             <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/twitter_tedxakgec"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
-                android:src="@drawable/ic_near_me_black_48dp"
-                android:tint="@color/secondary_text" />
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/link_tedxakgec"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/link" />
+
 
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingStart="16dp">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/bdc_logo"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bdc" />
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/bdc_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/powered_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light_italic"
+                    android:paddingStart="16dp"
+                    android:text="@string/powered_by"
+                    android:textColor="@color/primary_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/bdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/bdcoe"
+                    android:textColor="@color/colorAccent"
+                    android:paddingStart="16dp"
+                    android:textSize="21sp"
+                    tools:text="Big Data Centre of Excellence" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light_italic"
+                android:text="@string/follow" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/bdcoe" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/linkedin_bdcoe"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/linkedin" />
+
+            <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/instagram_bdcoe"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/twitter_bdcoe"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/twitter" />
+
+            <ImageView
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:id="@+id/link_bdcoe"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/link" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developed_by"/>
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rishitoshsingh"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
 
     </LinearLayout>
 
