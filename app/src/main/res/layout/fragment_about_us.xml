@@ -1,0 +1,207 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="in.co.bdcoe.tedxakgec.Fragments.AboutUsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorAccent">
+
+            <com.github.florent37.shapeofview.shapes.DiagonalView
+                android:id="@+id/upper_diagonal_1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                app:shape_diagonal_angle="7"
+                app:shape_diagonal_direction="left"
+                app:shape_diagonal_position="bottom">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+            </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+            <com.github.florent37.shapeofview.shapes.DiagonalView
+                android:id="@+id/downward_diagonal_1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                app:shape_diagonal_angle="7"
+                app:shape_diagonal_position="top">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+            </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+            <TextView
+                android:id="@+id/about_tedx_akgec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/downward_diagonal_1"
+                android:layout_below="@id/upper_diagonal_1"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="marquee"
+                android:padding="16dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/primary_text">
+
+            <com.github.florent37.shapeofview.shapes.DiagonalView
+                android:id="@+id/upper_diagonal_2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                app:shape_diagonal_angle="7"
+                app:shape_diagonal_direction="right"
+                app:shape_diagonal_position="bottom">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+            </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+            <com.github.florent37.shapeofview.shapes.DiagonalView
+                android:id="@+id/downward_diagonal_2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                app:shape_diagonal_angle="7"
+                app:shape_diagonal_direction="left"
+                app:shape_diagonal_position="top">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+            </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+            <TextView
+                android:id="@+id/about_ted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/downward_diagonal_2"
+                android:layout_below="@id/upper_diagonal_2"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="marquee"
+                android:padding="16dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorAccent">
+
+
+            <com.github.florent37.shapeofview.shapes.DiagonalView
+                android:id="@+id/upper_diagonal_3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                app:shape_diagonal_angle="7"
+                app:shape_diagonal_direction="left"
+                app:shape_diagonal_position="bottom">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+            </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+            <com.github.florent37.shapeofview.shapes.DiagonalView
+                android:id="@+id/downward_diagonal_3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                app:shape_diagonal_angle="7"
+                app:shape_diagonal_position="top">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+            </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+            <TextView
+                android:id="@+id/about_tedx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/downward_diagonal_3"
+                android:layout_below="@id/upper_diagonal_3"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="marquee"
+                android:padding="16dp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_light_italic"
+            android:text="@string/follow_us" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_near_me_black_48dp"
+                android:tint="@color/secondary_text" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_near_me_black_48dp"
+                android:tint="@color/secondary_text" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_near_me_black_48dp"
+                android:tint="@color/secondary_text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
