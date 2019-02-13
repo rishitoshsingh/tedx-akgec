@@ -15,12 +15,23 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
-            android:src="@drawable/sample_profile"
-            android:id="@+id/speaker_image"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="176dp"
-            android:scaleType="centerCrop" />
+            android:layout_height="176dp">
+
+            <ProgressBar
+                android:id="@+id/speaker_image_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="150dp" />
+
+            <ImageView
+                android:id="@+id/speaker_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/speaker_name"
@@ -33,42 +44,42 @@
             tools:text="Elon Musk" />
 
         <TextView
-            android:layout_marginBottom="8dp"
             android:id="@+id/speaker_designation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
             android:fontFamily="@font/roboto_light_italic"
             android:textColor="@color/primary_text"
             android:textSize="13sp"
             tools:text="CEO" />
 
         <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:visibility="invisible">-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="invisible">-->
 
-            <!--<Button-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
-                <!--android:fontFamily="@font/roboto_light"-->
-                <!--android:text="Ph No 8448161159"-->
-                <!--android:textAllCaps="false"-->
-                <!--android:textColor="@color/colorAccent"-->
-                <!--android:visibility="visible" />-->
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+        <!--android:fontFamily="@font/roboto_light"-->
+        <!--android:text="Ph No 8448161159"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:visibility="visible" />-->
 
-            <!--<Button-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_weight="1"-->
-                <!--android:background="?attr/selectableItemBackgroundBorderless"-->
-                <!--android:fontFamily="@font/roboto_light"-->
-                <!--android:text="Action2"-->
-                <!--android:textAllCaps="false"-->
-                <!--android:textColor="@color/colorAccent"-->
-                <!--android:visibility="invisible" />-->
+        <!--<Button-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="?attr/selectableItemBackgroundBorderless"-->
+        <!--android:fontFamily="@font/roboto_light"-->
+        <!--android:text="Action2"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@color/colorAccent"-->
+        <!--android:visibility="invisible" />-->
 
         <!--</LinearLayout>-->
 

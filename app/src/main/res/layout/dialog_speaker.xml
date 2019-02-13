@@ -10,10 +10,10 @@
 
     <com.github.florent37.shapeofview.shapes.DiagonalView
         android:layout_width="match_parent"
-        app:shape_diagonal_position="bottom"
+        android:layout_height="210dp"
         app:shape_diagonal_angle="5"
         app:shape_diagonal_direction="left"
-        android:layout_height="210dp">
+        app:shape_diagonal_position="bottom">
 
         <ImageView
             android:id="@+id/dialog_wallpaper"
@@ -33,7 +33,6 @@
         app:layout_anchor="@id/dialog_wallpaper"
         app:layout_anchorGravity="fill_vertical">
 
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -46,7 +45,7 @@
                 android:paddingBottom="8dp"
                 android:paddingEnd="16dp"
                 android:paddingStart="16dp"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/colorAccent"
                 android:textSize="22sp"
                 tools:text="Elon Musk" />
 
@@ -58,7 +57,7 @@
                 android:fontFamily="@font/roboto_light_italic"
                 android:paddingEnd="16dp"
                 android:paddingStart="16dp"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/primary_text"
                 android:textSize="13sp"
                 tools:text="CEO" />
 
@@ -67,12 +66,13 @@
         <TextView
             android:id="@+id/speaker_dialog_description"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="200dp"
             android:layout_marginTop="16dp"
+            android:autoSizeTextType="uniform"
             android:fontFamily="@font/roboto_light_italic"
+            android:gravity="center"
             android:paddingBottom="8dp"
             android:paddingEnd="16dp"
-            android:gravity="center"
             android:paddingStart="16dp"
             android:textAlignment="center"
             android:textColor="@color/secondary_text"
@@ -92,18 +92,17 @@
     </LinearLayout>
 
     <com.github.florent37.shapeofview.shapes.CircleView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginEnd="4dp"
         app:layout_anchor="@id/dialog_wallpaper"
         app:layout_anchorGravity="bottom|end">
 
         <ImageView
-            android:src="@drawable/sample_profile"
             android:id="@+id/speaker_dialog_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorAccent" />
+            android:background="@color/colorAccent"/>
 
     </com.github.florent37.shapeofview.shapes.CircleView>
 

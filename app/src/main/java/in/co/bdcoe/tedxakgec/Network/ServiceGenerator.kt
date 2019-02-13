@@ -22,7 +22,7 @@ class ServiceGenerator {
         private val client: OkHttpClient = builder.build()
 
         private val tedxAkgecBuilder: Retrofit.Builder = Retrofit.Builder()
-                .baseUrl("https://tedx-akgec.herokuapp.com/")
+                .baseUrl("https://tedxakgec.com/")
                 .client(client)
                 .addConverterFactory(GsonConverterFactory.create())
         private val retrofit: Retrofit = tedxAkgecBuilder.build()

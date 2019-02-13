@@ -61,6 +61,11 @@ class HomeFragment : Fragment() {
                     Uri.parse("geo:0,0?q=28.6758,77.5022 (Ajay Kumar Garg Engineering College)"))
             startActivity(intent)
         }
+        reserve_seats.setOnClickListener {
+            val newIntent = Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.townscript.com/e/tedxakgec-443430"))
+            startActivity(newIntent)
+        }
     }
 
     private fun createListner() {
