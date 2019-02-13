@@ -5,16 +5,19 @@
     tools:context="in.co.bdcoe.tedxakgec.Fragments.SpeakersFragment">
 
     <LinearLayout
+        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <android.support.v7.widget.RecyclerView
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/speakers_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
         <View
+            android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
