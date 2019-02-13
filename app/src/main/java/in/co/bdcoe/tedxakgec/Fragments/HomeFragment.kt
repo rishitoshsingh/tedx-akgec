@@ -2,6 +2,7 @@ package `in`.co.bdcoe.tedxakgec.Fragments
 
 
 import `in`.co.bdcoe.tedxakgec.R
+import `in`.co.bdcoe.tedxakgec.WebActivity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -62,9 +63,9 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
         reserve_seats.setOnClickListener {
-            val newIntent = Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://www.townscript.com/e/tedxakgec-443430"))
-            startActivity(newIntent)
+            val intent = Intent(context,WebActivity::class.java)
+            intent.putExtra(Intent.EXTRA_TEXT,"https://www.townscript.com/e/tedxakgec-443430")
+            startActivity(intent)
         }
     }
 
