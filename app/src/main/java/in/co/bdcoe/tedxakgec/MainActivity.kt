@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity() {
                 val tempResult = response?.body()
 
                 if (tempResult != null) {
-                    Toast.makeText(this@MainActivity,"Got Data",Toast.LENGTH_LONG).show()
+//                    Toast.makeText(this@MainActivity,"Got Data",Toast.LENGTH_LONG).show()
                     tedxResult = tempResult
                     if (main_swipe_refresh != null) {
                         main_swipe_refresh.isRefreshing = false
@@ -158,7 +158,7 @@ class MainActivity : AppCompatActivity() {
                     initializeNavigationBar()
                     initializeViewPager()
                 } else {
-                    Toast.makeText(this@MainActivity,"Crash Data",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@MainActivity,"Can't connect to Server, Try again",Toast.LENGTH_LONG).show()
 
                 }
             }
