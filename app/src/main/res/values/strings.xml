@@ -20,6 +20,10 @@
     <string name="tedxakgec">TEDxAKGEC</string>
     <string name="bdcoe">Big Data Center of Excellence</string>
     <string name="powered_by">Powered By</string>
-    <string name="developed_by">Developed By</string>
+    <string name="developed_by">developed by</string>
     <string name="rishitoshsingh">rishitoshsingh</string>
+    <string name="coded_with">Coded With</string>
+    <string name="by">by</string>
+    <string name="in_India">in India</string>
+    <string name="directions">Directions</string>
 </resources>
