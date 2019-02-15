@@ -13,7 +13,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="275dp"
             android:background="@color/colorAccent">
 
             <com.github.florent37.shapeofview.shapes.DiagonalView
@@ -71,7 +71,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="275dp"
             android:background="@color/primary_text">
 
             <com.github.florent37.shapeofview.shapes.DiagonalView
@@ -129,7 +129,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="275dp"
             android:background="@color/colorAccent">
 
 
