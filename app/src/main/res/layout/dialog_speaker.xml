@@ -81,7 +81,7 @@
         <Button
             android:id="@+id/speaker_dialog_close"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_gravity="center"
             android:background="@drawable/pill_button"
             android:fontFamily="@font/roboto_light"

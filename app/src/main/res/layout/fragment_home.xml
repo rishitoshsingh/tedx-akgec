@@ -79,6 +79,8 @@
                             android:src="@drawable/ic_date_range_black_48dp" />
 
                         <TextView
+                            android:autoSizeTextType="uniform"
+                            android:maxLines="1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/calender_icon"
@@ -177,7 +179,7 @@
                     android:fontFamily="@font/roboto_light_italic"
                     android:textColor="@color/colorPrimaryDark"
                     android:layout_height="wrap_content"
-                    android:text="Open in\nin Maps"/>
+                    android:text="@string/open_in_n_maps"/>
 
                 <ImageView
                     android:id="@+id/get_directions"

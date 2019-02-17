@@ -46,8 +46,11 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        nextEvent = Calendar.getInstance()
+        nextEvent = Calendar.getInstance(TimeZone.getTimeZone("IST"))
+//        nextEvent = Calendar.getInstance()
+        Log.d("Date", nextEvent.toString())
         nextEvent.add(Calendar.DATE, eventDate.toInt())
+        Log.d("Date", nextEvent.toString())
         val format1 = SimpleDateFormat("dd MMMM yyyy")
         val nextEventDateString = format1.format(nextEvent.time)
         try {
