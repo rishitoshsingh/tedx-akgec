@@ -7,6 +7,7 @@ import `in`.co.bdcoe.tedxakgec.R
 import `in`.co.bdcoe.tedxakgec.SpeakerDialog
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.view.ViewCompat
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
@@ -61,8 +62,7 @@ class SpeakersFragment : Fragment() {
             layoutManager = viewManager
             adapter = speakersAdapter
             itemAnimator = DefaultItemAnimator()
+            isNestedScrollingEnabled = false
         }
-
-
     }
 }

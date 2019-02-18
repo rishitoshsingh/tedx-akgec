@@ -235,13 +235,13 @@
                 android:src="@drawable/instagram" />
 
             <ImageView
-                android:id="@+id/twitter_tedxakgec"
+                android:id="@+id/facebook_tedxakgec"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
                 android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:padding="8dp"
-                android:src="@drawable/twitter" />
+                android:src="@drawable/facebook" />
 
             <ImageView
                 android:id="@+id/link_tedxakgec"
